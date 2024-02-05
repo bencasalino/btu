@@ -1,0 +1,410 @@
+* { 
+    padding: 0; 
+    margin: 0; 
+    font-family: 'Lato', sans-serif;
+    color: white;
+    /* background-color: #000000; */
+  */
+}
+
+/* @import url("https://fonts.googleapis.com/css?family=Lato");  */
+/* body {
+  height: 100vh;
+  width: 100vw;
+} */
+
+.hero-banner {
+    background: url(images/hero-waterfall-bg.png),
+      url(images/hero-space-bg-this.png), url(images/hero-pillars-bg-best.png),
+      url(images/hero-main-bg.png);
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: -99999;
+    animation: parallax_bg linear 40s infinite;
+  }
+  
+  
+  
+  @keyframes parallax_bg {
+    100% {
+      background-position-y: -1200px, 1000px, 300px, 0px;
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+    .hero-banner {
+  display: none;
+    }
+  }
+
+
+  h1 { 
+    /* font-size:50px; */
+    padding-left: 10px; 
+    padding-top: 10px; 
+    font-family: 'Lato';
+    color: white; 
+  }
+ 
+
+/* Anchor styles */
+  a { 
+    color: white;
+    text-decoration: none;
+  }
+  /* a:hover { 
+    color: #dcdcdc;
+  }
+  a:active { 
+    color: #666;
+  } */
+
+  /* a:visited { 
+    color: white;
+  } */
+
+
+.name-title {
+  padding:10px;
+  border-bottom: 1px solid white;
+}
+
+
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+
+  .header-icon {
+    color: white;
+    height: 2rem;
+    width: 2rem;
+    padding: 5px;
+    margin-top: 1rem;
+    /* background-color: white; */
+  }
+
+
+  .nav-item {
+    list-style-type: none;
+  }
+
+  .nav-class { 
+    background-color: white;
+    color: black;
+  }
+
+  
+
+  h1 {
+    font-size: 2.8rem;
+  }
+  .pillars{ 
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.pillar{ 
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  }
+  
+
+.pillar-icon { 
+  height: 100px;
+  width: 100px;
+}
+
+
+.myButton {
+width: 100px;
+text-align: center;
+	border-radius:15px;
+	border:1px solid #FFFFFF;
+	/* display:inline-block; */
+	cursor:pointer;
+	color:#FFFFFF;
+	font-family:Arial;
+	font-size:14px;
+	/* font-weight:bold; */
+  padding:12px 16px;
+  margin:12px 16px;
+	text-decoration:none;
+	/* text-shadow:0px 1px 0px #ffffff; */
+}
+.myButton:hover {
+background-color: white;
+color:#333333;
+text-decoration: none;
+}
+
+
+.meButton {
+  /* width: 100px; */
+  text-align: center;
+    /* border-radius:15px;
+    border:1px solid #FFFFFF; */
+    /* display:inline-block; */
+    /* padding:10px;
+    margin-bottom:10px; */
+    border-bottom: 1px solid white;
+    cursor:pointer;
+    color:#FFFFFF;
+    text-decoration:none;
+    /* text-shadow:0px 1px 0px #ffffff; */
+  }
+  .meButton:hover {
+  background-color: none;
+  color:#ffffff;
+  text-decoration: none;
+  }
+
+
+.icons { 
+  height: 50px;
+  color:white;
+}
+
+i:hover
+{
+  /* background-color: #000000; */
+  fill:black;
+  color:black;
+}
+
+.spot-player{
+border:.5px white solid;
+margin:20px;
+-webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 10px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 10px 15px 5px rgba(0,0,0,0);
+  }
+  
+.bg-image {
+  width: 100vw;
+  border-bottom: 1px solid white; 
+}
+
+body {
+  /* background-color: #000000; */
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+#track01 {
+  position: relative;
+  border-bottom: 1px solid white;
+  
+}
+
+
+#outer01 {
+  height: 100%;
+  margin-left: 12.5%;
+  position: absolute;
+  top: 0;
+  width: 75%;
+}
+
+#inner01 {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+#track02 {
+  position: relative;
+  border-bottom: 1px solid white;
+  
+}
+
+#outer02 {
+  height: 100%;
+  margin-left: 12.5%;
+  position: absolute;
+  top: 0;
+  width: 75%;
+}
+
+#inner02 {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+
+h1 {
+
+}
+
+.flex-row {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+  color: black;
+}
+
+.box {
+  height: 70px;
+  padding: 1px;
+  border: 1px solid white;
+  width: 70px;
+}
+
+
+.footer {
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+
+
+.dalogo {
+  /* mix-blend-mode: multiply; */
+  /* color:white; */
+  /* mix-blend-mode: overlay; */
+  width: 100vw;
+}
+
+.symbols {
+  /* mix-blend-mode: multiply; */
+  mix-blend-mode: overlay;
+  width: 100vw;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(4) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(5) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(6) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(7) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(8) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items {
+  border: 1px solid red;
+  width: 100vw;
+}
+
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .btnthing {
+    /* margin: .5rem; */
+    /* background-color: white; */
+    width: 10rem;
+    height: 2rem;
+  }
